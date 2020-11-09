@@ -22,7 +22,7 @@ type ProxyTarget = ProxyTargetUrl | ProxyTargetDetailed;
 type ProxyTargetUrl = string | Partial<url.Url>;
 
 interface ProxyTargetDetailed {
-  host: string;
+  host?: string;
   port: number;
   protocol?: string;
   hostname?: string;
